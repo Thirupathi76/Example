@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#243447"
+    android:orientation="vertical">
+
+    <com.thirudetails.example.views.TextViewBody
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Example"
+        android:textColor="@color/white"
+        android:layout_margin="28sp"
+        android:textSize="34sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20sp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            android:theme="@style/TextLogIn"
+            android:layout_marginTop="10sp">
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/colorAccent"
+                android:foregroundTint="@color/colorAccent"
+
+                android:textColorHint="@color/white"
+                android:hint="User ID" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:theme="@style/TextLogIn"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="10sp">
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:inputType="textPassword"
+                android:backgroundTint="@color/colorAccent"
+                android:foregroundTint="@color/colorAccent"
+
+                android:textColorHint="@color/white"
+                android:hint="Password" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14sp"
+            android:layout_marginTop="14sp"
+            android:orientation="horizontal">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:text="Remember me"
+                android:textColor="@color/white"
+                android:buttonTint="@color/white"
+                android:layout_height="wrap_content" />
+            <com.thirudetails.example.views.TextViewHeader
+                android:layout_width="wrap_content"
+                android:text="forgot password"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <com.thirudetails.example.views.TextViewHeader
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:text="SIGN IN"
+            android:textColor="@color/white"
+            android:background="#2cadfc"
+            android:gravity="center_horizontal"
+            android:padding="14sp"
+            android:layout_height="wrap_content" />
+        <com.thirudetails.example.views.TextViewHeader
+            android:id="@+id/tvsignup"
+            android:layout_width="wrap_content"
+            android:text="Not a member? signup"
+            android:textColor="@color/white"
+            android:layout_marginTop="20sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
